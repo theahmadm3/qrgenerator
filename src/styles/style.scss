@@ -1,0 +1,43 @@
+.w-fc{
+    max-width: fit-content;
+  }
+  button {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #154096;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  
+    &:hover {
+      border-color: #646cff;
+    }
+  
+    &:focus,
+    &:focus-visible {
+      outline: 4px auto -webkit-focus-ring-color;
+    }
+  }
+  .qrContainer{
+    height: 250px;
+    min-width: 60%;
+  }
+  .inputDiv{
+    margin-top: 5%;
+  }
+  @media (max-width: 700px) {
+    .input {
+      > input {
+        width: 65% !important;
+      }
+      > .generateButton {
+        width: 35% !important;
+      }
+    }
+  }
+  .buttons{
+    background: rgba(0, 102, 255, 0.529);
+  }

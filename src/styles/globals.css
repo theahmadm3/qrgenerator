@@ -87,12 +87,11 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: url("../images/space.png");
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+
 }
 
 a {
@@ -104,4 +103,25 @@ a {
   html {
     color-scheme: dark;
   }
+}
+.whole-body {
+	display: flex;
+}
+@media (min-width: 700px) {
+	.title {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.container{
+		flex-direction: row !important; 
+	}
+}
+@media (max-width: 700px) {
+	.whole-body {
+		flex-direction: column;
+	}
+	.container > div {
+		width: 100% !important;
+	}
 }
